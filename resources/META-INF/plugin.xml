@@ -1,0 +1,26 @@
+<idea-plugin>
+  <id>com.mobon.commit_plugin</id>
+  <name>Mobon Prefix Commit Message</name>
+  <version>1.0.2.1</version>
+  <vendor email="ymkim@enliple.com" url="https://youngclown.github.io">ymkim</vendor>
+
+  <depends>com.intellij.modules.vcs</depends>
+
+  <description>
+    <![CDATA[
+        <p></p>
+        <h1>gitlab push 정책</h1>
+        <br>
+        <p>commit message에 본인 소속 부서 및 팀을 기재해서 push해 주시기바랍니다.</p>
+        <br>
+        ]]>
+  </description>
+
+  <actions>
+    <action id="Commit-Message-Create" class="com.mobon.commit.CommitPluginAction"
+            text="Mobon Prefix Commit" icon="PluginIcons.ICON">
+      <add-to-group group-id="Vcs.MessageActionGroup" anchor="first" />
+    </action>
+  </actions>
+
+</idea-plugin>
